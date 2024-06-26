@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+   
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<header>
+    <nav>
+        <div class="logo">HR Employee Attrition</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <!-- <li><a href="form.html">Prediction Form</a></li> -->
+            <!-- <li><a href="#about">About</a></li> -->
+            <!-- <li><a href="#services">Services</a></li> -->
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Have questions or need further information? Please feel free to reach out to us.</p>
+        <form action="mailto:anandhurv08@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message.." style="height:200px" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+        <div class="email-info">
+            <p>Alternatively, you can email us directly at: <a href="mailto:anandhurv08@gmail.com">anandhurv08@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

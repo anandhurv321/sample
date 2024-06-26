@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="stylesheet2.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet2.css') }}">
+</head>
+<ul class="nav-links">
+    <li><a href="/">Home</a></li>
+</ul>
+<body>
+    <h1>HR Employee Attrition Prediction Model - Input Instructions</h1>
+    <h4>Thank you for using our HR Employee Attrition Prediction Model! To make accurate predictions, please follow the instructions below:</h4>
+    <ol>
+        <li>
+            Understanding the Columns:
+            <ul>
+                <li>
+                    You will need to provide values for 14 different columns to make a prediction.
+                </li>
+                <li>
+                    Each column represents a specific attribute or characteristic of an employee
+                </li>
+            </ul>
+        </li>
+        <li>
+            Inserting Values:
+            <ul>
+                <li>
+                    Ensure that you input only numerical values in each column. Do not use any other characters
+                </li>
+                <li>
+                    For categorical columns that have been converted to numeric types, such as 'Gender,' use the following mapping:
+                    <ul>
+                        0: Female
+                    </ul>
+                    <ul>
+                        1: Male
+                    </ul>
+                
+                </li>
+                <li>
+                    Carefully review each column description before inserting values to ensure accuracy.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Column Descriptions:
+            <ul>
+                <li>
+                    Column 1: Age - Enter the age of the employee in years.
+                </li>
+                <li>
+                    etc....
+                </li>
+            </ul>
+        </li>
+        <li>
+            Submitting Values:
+            <ul>
+                <li>
+                    Once you have entered values for all 14 columns, click the "Submit" or "Predict" button to receive the attrition prediction.
+                </li>
+                <li>
+                    Double-check your inputs to ensure accuracy before submitting.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Interpreting Results:
+            <ul>
+                <li>
+                    After submitting, you will receive the attrition prediction result based on the input values provided.
+                </li>
+                <li>
+                    A positive prediction indicates a likelihood of attrition, while a negative prediction suggests the employee is less likely to leave the company.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Feedback and Support:
+            <ul>
+                <li>
+                    If you encounter any issues or have questions regarding the input process or predictions, please contact our support team for assistance.
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <h4>Thank you for using our HR Employee Attrition Prediction Model. We hope this tool provides valuable insights for your workforce management efforts!</h4>
+
+    <a href="form.html" class="btn">dive in</a>
+</body>
+</html>
